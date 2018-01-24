@@ -13,7 +13,6 @@ if(bg){
     })
 } 
 $(document).ready(function(){
-
     if(bg.flag.begin)
         $(".btn").html("选择完成");
     else

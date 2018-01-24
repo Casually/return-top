@@ -10,8 +10,8 @@
 	}, 
 	"permissions": [ //允许插件访问的url
 		"http://*/", 
-		"https://*/", 
-		"bookmarks", 
+		"https://*/",
+		"bookmarks",
 		"tabs", 
 		"history" 
 	],
@@ -21,9 +21,8 @@
     "content_scripts": [{  //对页面内容进行操作的脚本
          "matches": ["http://*/*","https://*/*"],  //满足什么条件执行该插件 
          "js": ["js/jquery-1.9.1.min.js", "js/js.js"],   
-         "run_at": "document_start",  //在document加载时执行该脚本
+         "run_at": "document_end",  //在document加载时执行该脚本
          "all_frames": true,
-		 "run_at":"document_end",
 		 "css":["css/index.css"]
     }]	
 }  
